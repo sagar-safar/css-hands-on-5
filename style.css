@@ -1,0 +1,313 @@
+body{
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+  }
+  
+  .container {
+    text-align: center;
+    height: 120vh;
+    background-color: yellow;
+    
+  }
+  p {
+    font-size: 2rem;
+  }
+  a{
+      text-align: center;
+  }
+  
+  .three-div-1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .div-skew {
+    height: 100px;
+    width: 100px;
+    outline: none;
+    background-color: aqua;
+    animation: skew 3s linear infinite;
+  }
+  
+  @keyframes skew {
+    0% {
+      transform: skew(20deg);
+    }
+  
+    50% {
+      transform: skew(-20deg);
+    }
+  
+    100% {
+      transform: skew(20deg);
+    }
+  }
+  
+  /* 2 */
+  
+  .three-div-2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .box-2 {
+    height: 100px;
+    width: 100px;
+    outline: none;
+    background-color: violet;
+    animation: skewY 5s linear infinite;
+  }
+  
+  @keyframes skewY {
+    0% {
+      transform: skewY(20deg);
+    }
+  
+    50% {
+      transform: skewY(-20deg);
+    }
+  
+    100% {
+      transform: skewY(20deg);
+    }
+  }
+  
+  /* 3 */
+  
+  .three-div-3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .box-3 {
+    height: 100px;
+    width: 100px;
+    outline: none;
+    background-color: rgb(132, 18, 0);
+    animation: rotate 3s ease-out infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(-180deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  /* 4 */
+  
+  .three-div-4 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .box-4 {
+    height: 100px;
+    width: 100px;
+    outline: none;
+    background-color: blue;
+  }
+  
+  .div-1 {
+    animation: go 3s linear infinite;
+  }
+  @keyframes go {
+    0% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      transform: scaleY(0.5);
+    }
+  
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  
+  .div-2 {
+    animation: width 6s linear infinite;
+  }
+  @keyframes width {
+    0% {
+      width: 100px;
+    }
+    25% {
+      width: 25px;
+    }
+  
+    50% {
+      width: 50px;
+    }
+  
+    100% {
+      width: 100px;
+    }
+  }
+  
+  .div-3 {
+    animation: rotates 3s ease infinite;
+    margin-left: 10px;
+  }
+  
+  @keyframes rotates {
+    0% {
+      rotate: 90deg;
+    }
+  
+    50% {
+      rotate: 180deg;
+    }
+  
+    100% {
+      rotate: 90deg;
+    }
+  }
+  
+  /* index.html 2nd page */
+  .two-page-body {
+    height: 100vh;
+    background-color: green;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hover {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    transition: all 1.5s linear;
+    margin: 30px;
+  }
+  
+  .box-one:hover {
+    width: 300px;
+  }
+  
+  .box-two:hover {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .box-three:hover {
+    width: 300px;
+  }
+  
+  .box-four:hover {
+    width: 300px;
+  }
+  .box-five:hover {
+    width: 300px;
+  }
+  .box-six:hover {
+    width: 300px;
+  }
+  
+  .box-seven:hover{
+      width: 300px;
+  }
+  
+  
+  /* index3.html  3rd page */
+  
+  
+  
+  .sky-img {
+      position: relative;
+  
+  }
+  .city-img {
+      position: absolute;
+      bottom: 200px;
+  }
+  .city-img > img{
+    width: 110vw;
+    animation: ran 0.3s linear infinite;
+  }
+  
+  @keyframes ran{
+    0%{
+  transform: translateX(0px);
+    }
+  
+    100%{
+      transform: translateX(-100px);
+    }
+  }
+  
+  .road-img > img{
+    animation: run 0.1s linear infinite;
+    height: 200px;
+  }
+  
+  @keyframes run{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-200px);
+    }
+  }
+  .wheel-img > img{
+    height: 100px;
+  }
+  
+  .wheel{
+    animation: true 0.5s linear infinite;
+  }
+  
+  @keyframes true{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .wheel-1{
+    position: absolute;
+    bottom: 95px;
+    left: 41%
+  
+  }
+  
+  .wheel-2{
+    position: absolute;
+    bottom: 100px;
+    left: 63%
+  }
+  
+  .car-img > img{
+    position: absolute;
+    bottom: 100px;
+    left: 38%;
+    height: 200px;
+  }
+  
+  .sun{
+    position: absolute;
+    height: 100px;
+    top: 45%;
+    right: 100px;
+  }
+  
+  .container-new{
+    position: relative;
+    bottom: 550px;
+  }
